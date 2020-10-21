@@ -1,0 +1,16 @@
+﻿<Window x:Class="Sokoban.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sokoban"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="700" ResizeMode="NoResize" Background="#FFA858A8">
+    <Canvas>
+        <Canvas x:Name="cnvGrille" Height="500" Canvas.Left="100" Canvas.Top="112" Width="500" Background="#FFD1BEBE"/>
+        <Canvas x:Name="cnvMobiles" Height="500" Width="500" Canvas.Left="100" Canvas.Top="112"/>
+        <Button x:Name="btnRecommencer" Content="Recommencer" Canvas.Left="38.5" Canvas.Top="15.796" Width="190.5" FontSize="24" Height="52.423"/>
+        <TextBlock Canvas.Left="259.5" TextWrapping="Wrap" Text="Nombre de déplacement " Canvas.Top="26.046" Height="52.423" Width="285" FontSize="24"/>
+        <TextBlock x:Name="txtNbDeplacement" Canvas.Left="549.5" TextWrapping="Wrap" Height="38.923" Width="31.29" Canvas.Top="29.296" FontSize="24"><Run Text="0"/></TextBlock>
+    </Canvas>
+</Window>
